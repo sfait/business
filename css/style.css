@@ -1,0 +1,52 @@
+/* variables */
+:root {
+    --black-color: #19161a;
+    --white-color: #ffffff;
+    --blue-color: #445669;
+    --silver-color: #c2b7ad;
+    --brown-color: #45403c;
+    --beige-color: #e8dcc6;
+    --orange-color: #dd8033;
+    --second-orange-color: #d8792b;
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: var(--black-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* media queries*/
+@media only screen and (min-width: 1000px) {
+
+}
