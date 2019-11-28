@@ -51,7 +51,7 @@ function showTooltip() {
     }
 }
 
-const init = () => {
+const init = function() {
     changeTitle();
     countingDownDays();
     showTooltip();
