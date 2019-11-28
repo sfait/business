@@ -387,10 +387,139 @@ body {
 .promotion-price {
     font-size: 1.5rem;
     color: var(--green-color);
+    font-weight: 700;
 }
 
 .promotion-date {
     font-size: 0.8rem;
+}
+
+/* form */
+.form-section {
+    background: var(--blue-color);
+}
+
+.form-wrapper {
+    padding: 2rem 0;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header {
+    color: var(--silver-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form-wrapper p {
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.input-box {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    margin: 0.4rem 0 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--beige-color);
+    border-radius: 5px;
+}
+
+.tooltip {
+    padding: 0.5rem;
+    background: var(--beige-color);
+    color: var(--blue-color);
+    border-radius: 5px;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    display: none;
+}
+
+.tooltip::after {
+    content: '';
+    width: 0;
+    border-style: solid;
+    border-width: 15px 10px 0;
+    border-color: var(--beige-color) transparent;
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    right: 10px;
+    z-index: 1;
+}
+
+.show-tooltip {
+    display: block;
+}
+
+.question-sign {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--silver-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    margin-top: 0.8rem;
+    right: 0;
+    margin-right: 0.5rem;
+    cursor: default;
+}
+
+.zipcode-city-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.zipcode-item {
+    width: 100%;
+    margin-right: 0;
+}
+
+.city-item {
+    width: 100%;
+}
+
+.form-btn-wrapper {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.form-btn {
+    padding: 1rem 6rem;
+    border: none;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* footer */
+.footer {
+    background: var(--blue-color);
+}
+
+.footer-wrapper {
+    padding: 1rem 0;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 /* media queries*/
@@ -497,5 +626,23 @@ body {
     .promotion-text {
         width: 50%;
         margin-top: 0;
+    }
+
+    /* form */
+    .form {
+        width: 65%;
+    }
+
+    .zipcode-city-wrapper {
+        flex-direction: row;
+    }
+
+    .zipcode-item {
+        width: 30%;
+        margin-right: 1rem;
+    }
+
+    .city-item {
+        width: 70%;
     }
 }

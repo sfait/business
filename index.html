@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                     <div class="hero-btn-wrapper">
-                        <a href="#form" class="hero-btn btn">Zamów Magazyn Business</a>
+                        <a href="#form" class="btn hero-btn">Zamów Magazyn Business</a>
                         <span class="hero-btn-span">(przeniesie do formularza zamówienia)</span>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
         </section>
         <section class="articles">
             <div class="articles-wrapper wrapper">
-            <h2 class="second-header articles-header">Znajdziesz u nas między innymi</h2>
+                <h2 class="second-header articles-header">Znajdziesz u nas między innymi</h2>
                 <div class="articles-box">
                     <div class="article">
                         <ul class="article-list">
@@ -167,8 +167,106 @@
                 </div>
             </div>
         </section>
+        <section class="form-section">
+            <div class="form-wrapper wrapper">
+                <h2 class="second-header form-header">Formularz zamówienia</h2>
+                <p>
+                    W celu złożenia zamówienia prosimy o wypełnienie poniższego formularza (wszystkie pola są obowiązkowe).
+                </p>
+                <form class="form">
+                    <div class="form-item">
+                        <label for="name">Imię i nazwisko</label>
+                        <div class="input-box">
+                            <input type="text" placeholder="Imię i nazwisko" class="form-input" id="name" maxlength="40" required />
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    Format: Adam Nowak
+                                </div>
+                                <div class="question-sign">
+                                    &#63;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Adres e-mail</label>
+                        <div class="input-box">
+                            <input type="email" placeholder="nazwa@gmail.com" class="form-input" id="email" required />
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    Format: adamnowak@gmail.com
+                                </div>
+                                <div class="question-sign">
+                                    &#63;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">Numer telefonu</label>
+                        <div class="input-box">
+                            <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="123456789" class="form-input" id="phone" required />
+                            <div class="tooltip-wrapper">
+                                <div class="tooltip">
+                                    Format: 123456789
+                                </div>
+                                <div class="question-sign">
+                                    &#63;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="adress" class="form-label">Adres</label>
+                        <input type="text" placeholder="Adres" id="adress" class="form-input" required />
+                    </div>
+                    <div class="zipcode-city-wrapper">
+                        <div class="form-item zipcode-item">
+                            <label for="zipcode" class="form-label">Kod pocztowy</label>
+                            <div class="input-box">
+                                <input type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="Kod pocztowy" id="zipcode" class="form-input" required />
+                                <div class="tooltip-wrapper">
+                                    <div class="tooltip">
+                                        Format: 11-111
+                                    </div>
+                                    <div class="question-sign">
+                                        &#63;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item city-item">
+                            <label for="city" class="form-label">Miasto</label>
+                            <input type="text" placeholder="Miasto" id="city" class="form-input" required />
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="country" class="form-label">Kraj</label>
+                        <select id="country" class="form-input">
+                            <option value="poland">Polska</option>
+                            <option value="usa">Niemcy</option>
+                            <option value="italy">Stany Zjednoczone</option>
+                        </select>
+                    </div>
+                    <p>
+                        <s class="promotion-old-price">300 zł</s> <span class="promotion-price">150 zł</span>
+                        <br /><span class="promotion-date">(tylko do 31.12.2019)</span>
+                    </p>
+                    <div class="form-btn-wrapper">
+                        <input type="submit" class="btn form-btn" value="Zamów Magazyn Business" />
+                    </div>
+                    <p class="info">
+                        Przysługuje Państwu prawo do odstąpienia od umowy w terminie 14 dni licząc od dnia otrzymania pierwszego egzemplarza magazynu.
+                    </p>
+                </form>
+            </div>
+        </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer-wrapper wrapper">
+            &copy; 2019 Magazyn Business
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -35,10 +35,26 @@ function countingDownDays() {
     }, 1000);
 }
 
+function showTooltip() {
+    const questionSigns = document.querySelectorAll(".tooltip-wrapper");
+
+    for (let i = 0; i < questionSigns.length; i++) {
+        questionSigns[i].addEventListener("mouseover", function() {
+            const tooltip = this.querySelector(".tooltip");
+            tooltip.classList.add("show-tooltip");
+        })
+
+        questionSigns[i].addEventListener("mouseout", function() {
+            const tooltip = this.querySelector(".tooltip");
+            tooltip.classList.remove("show-tooltip");
+        })
+    }
+}
 
 const init = () => {
     changeTitle();
     countingDownDays();
+    showTooltip();
 }
 
 document.addEventListener("DOMContentLoaded", init);
