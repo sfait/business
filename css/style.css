@@ -132,6 +132,7 @@ body {
     margin-top: 0.5rem;
     color: var(--white-color);
     font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .hero-photo {
@@ -254,6 +255,27 @@ body {
     border-left: 29px solid var(--white-color);
     right: 0;
     margin-right: -20px;
+}
+
+/* quotation */
+.quotation {
+    background: var(--silver-color);
+}
+
+.quotation-wrapper {
+    padding: 3rem 0;
+    color: var(--blue-color);
+    text-align: center;
+}
+
+.cite {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.author {
+    color: var(--black-color);
+    font-weight: 300;
 }
 
 /* media queries*/
