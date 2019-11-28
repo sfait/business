@@ -154,7 +154,7 @@ body {
 
 /* reviews */
 .reviews {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .hide-header {
@@ -162,27 +162,31 @@ body {
 }
 
 .reviews-wrapper {
-    padding: 3rem 2.5rem;
+    padding: 3rem 0rem;
     display: flex;
     flex-direction: column;
 }
 
 .opinion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.opinion:nth-of-type(2) {
+    flex-direction: column-reverse;
 }
 
 .opinion-photo {
     width: 150px;
     height: 150px;
-    margin: 0 3rem 0 0;
+    margin: 0;
 }
 
 .opinion-photo:nth-of-type(2) {
-    margin: 0 0 0 3rem;
+    margin: 0;
 }
 
 .opinion-photo img {
@@ -192,12 +196,10 @@ body {
 }
 
 .opinion-text {
-    width: 80%;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    border: 2px solid var(--beige-color);
-    border-radius: 15px;
+    width: 100%;
+    font-size: 1rem;
     position: relative;
+    text-align: center;
 }
 
 .opinion-text span {
@@ -212,6 +214,7 @@ body {
     position: absolute;
     top: 50%;
     margin-top: -25px;
+    display: none;
 }
 
 .left-triangle {
@@ -236,6 +239,7 @@ body {
     position: absolute;
     top: 50%;
     margin-top: -24.5px;
+    display: none;
 }
 
 .left-triangle-inside {
@@ -254,10 +258,12 @@ body {
 
 /* media queries*/
 @media only screen and (min-width: 1000px) {
+    /* header */
     .main-header {
         font-size: 2.5rem;
     }
 
+    /* hero */
     .hero-wrapper {
         padding: 4rem 0;
         flex-direction: row;
@@ -280,5 +286,47 @@ body {
 
     .hero-photo {
         width: 50%;
+    }
+
+    /* reviews */
+    .reviews-wrapper {
+        padding: 3rem 2.5rem;
+    }
+
+    .opinion {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+    }
+
+    .opinion:nth-of-type(2) {
+        flex-direction: row;
+    }
+
+    .opinion-photo {
+        width: 150px;
+        height: 150px;
+        margin: 0 3rem 0 0;
+    }
+
+    .opinion-photo:nth-of-type(2) {
+        margin: 0 0 0 3rem;
+    }
+
+    .opinion-text {
+        width: 80%;
+        padding: 0.5rem 2rem;
+        font-size: 0.8rem;
+        border: 2px solid var(--beige-color);
+        border-radius: 15px;
+        text-align: left;
+    }
+
+    .triangle {
+        display: block;
+    }
+
+    .triangle-inside {
+        display: block;
     }
 }
