@@ -484,6 +484,7 @@ body {
 }
 
 .form-header {
+    text-align: center;
     color: #c2b7ad;
     text-transform: uppercase;
     font-weight: 700;
@@ -586,7 +587,7 @@ body {
 }
 
 .form-btn {
-    padding: 1rem 6rem;
+    padding: 1rem 2rem;
     border: none;
     cursor: pointer;
 }
@@ -756,4 +757,9 @@ body {
     .city-item {
         width: 70%;
     }
+
+    .form-btn {
+        padding: 1rem 5rem;
+    }
+
 }
