@@ -98,7 +98,7 @@ body {
 .benefits-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     color: #ffffff;
     line-height: 2;
 }
@@ -109,6 +109,16 @@ body {
 
 .benefits-icon {
     margin-right: 0.5rem;
+}
+
+.hero-promotion {
+    margin: 1rem 0 1.5rem;
+}
+
+.hero-promotion-strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3FBF7F;
 }
 
 .hero-btn-wrapper {
@@ -336,6 +346,7 @@ body {
 
 .articles-header {
     color: #101B31;
+    text-align: center;
     position: relative;
 }
 
@@ -632,11 +643,11 @@ body {
 
     .hero-benefits {
         width: 50%;
-        margin: 1rem 1rem 0 0;
+        margin: 0.5rem 1rem 0.5rem 0;
     }
 
     .benefits-list {
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         line-height: 2.5;
     }
 
@@ -761,5 +772,4 @@ body {
     .form-btn {
         padding: 1rem 5rem;
     }
-
 }
