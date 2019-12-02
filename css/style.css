@@ -64,6 +64,7 @@ body {
 
 .hero-wrapper {
     padding: 3rem 0;
+    line-height: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,6 +114,7 @@ body {
 
 .hero-promotion {
     margin: 1rem 0 1.5rem;
+    line-height: 1.5;
 }
 
 .hero-promotion-strong {
@@ -123,6 +125,7 @@ body {
 
 .hero-btn-wrapper {
     width: 100%;
+    line-height: 1.5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,10 +162,9 @@ body {
 .hero-photo {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    line-height: 0;
-    overflow: hidden;
     border: 1.5px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .hero-photo img {
@@ -666,7 +668,7 @@ body {
 
     .hero-benefits {
         width: 50%;
-        margin: 0.5rem 1rem 0.5rem 0;
+        margin: 0 1rem 0.5rem 0;
     }
 
     .benefits-list {
