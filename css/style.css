@@ -160,6 +160,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    line-height: 0;
     overflow: hidden;
     border: 1.5px solid #ffffff;
 }
