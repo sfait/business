@@ -118,7 +118,7 @@ body {
 .hero-promotion-strong {
     font-weight: 700;
     text-transform: uppercase;
-    color: #3FBF7F;
+    color: #c2b7ad;
 }
 
 .hero-btn-wrapper {
@@ -477,7 +477,7 @@ body {
 }
 
 .form-wrapper {
-    padding: 2rem 0;
+    padding: 2rem 0 0.5rem;
     color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -608,17 +608,39 @@ body {
     font-weight: 300;
 }
 
+.form-links {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.form-links a {
+    color: #ffffff;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.form-links a:nth-of-type(2) {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
 /* footer */
 .footer {
     background: #101B31;
 }
 
 .footer-wrapper {
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     color: #ffffff;
-    text-align: center;
     font-size: 0.8rem;
     font-weight: 300;
+    text-align: center;
 }
 
 /* media queries*/
