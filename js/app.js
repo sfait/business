@@ -19,7 +19,7 @@ function changeTitle() {
 
 function countingDownDays() {
     const daysCounter = document.querySelector(".promotion-days-counter");
-    const countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+    const countDownDate = new Date("Jul 1, 2020 00:00:00").getTime();
 
     const setinterval = setInterval(function() {
         const now = new Date().getTime();
